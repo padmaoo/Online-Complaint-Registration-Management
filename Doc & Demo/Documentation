@@ -1,0 +1,46 @@
+ONLINE COMPLAINT REGISTRATION AND MANAGEMENT SYSTEM 
+1. Project Overview 
+The Complaint System is a web application designed to manage and track complaints. It allows 
+users to register complaints and for administrators to manage and resolve them. The system is 
+built using MongoDB, Express, Node.js, and Handlebars. 
+2. Features 
+● User authentication and authorization 
+● Complaint registration by users 
+● Admin panel to manage complaints 
+● Assignment of complaints to engineers 
+● Email notifications for complaint updates 
+● Dashboard for statistics and reports 
+3. Installation 
+To set up the project locally, follow these steps: 
+1.Clone the repository: 
+>cd complaint-system
+ 2.Install dependencies: 
+>npm install 
+3.Set up the environment variables:  
+4.Run the application: 
+npm start 
+5.Access the application: Open your browser and go to http://localhost:3000. 
+4. Usage 
+● Register: Users can register an account to log in. 
+● Log In: Existing users can log in using their credentials. 
+● Register Complaint: After logging in, users can fill out a form to register their 
+complaints. 
+● Admin Panel: Admins can log in to view all complaints, assign them to engineers, and 
+update their status. 
+5. Architecture 
+The project follows the MVC (Model-View-Controller) architecture: 
+● Models: Define the structure of the data (e.g., User, Complaint). 
+● Views: Templates to render the HTML pages (e.g., Handlebars templates). 
+● Controllers: Handle the logic for each route and interact with the models. 
+6. API Endpoints 
+User Routes 
+● POST/register - Register a new user 
+● POST/login - Log in a user 
+● GET/logout - Log out a user 
+Complaint Routes 
+● GET/complaints - View all complaints (Admin only) 
+● POST/complaints - Register a new complaint 
+● PUT/complaints/:id - Update complaint status (Admin only) 
+● DELETE/complaints/:id - Delete a complaint (Admin only) 
+7.Purpose:  
+To provide an efficient way to handle and resolve user complaints. 
